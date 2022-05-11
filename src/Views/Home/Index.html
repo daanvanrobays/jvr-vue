@@ -1,0 +1,240 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+<div id="myCarousel" class="carousel slide hidden-sm hidden-xs">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <a href="@Url.Action("Index", "Patholoog")">
+                <div class="fill" style="background-image: url('../../Images/CarouselHeaders/De autopsie van het hart_ Enrique Simonet_1890.jpg'); "></div>
+                <div class="carousel-caption">
+                    <h1 class="blackoutline">Patholoog</h1>
+                </div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="@Url.Action("Index", "Auteur")">
+                <div class="fill" style="background-image: url('../../Images/CarouselHeaders/Andreas flap volledig.jpg'); "></div>
+                <div class="carousel-caption">
+                    <h1 class="blackoutline">Auteur</h1>
+                </div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="@Url.Action("Index", "Curator")">
+                <div class="fill" style="background-image: url('../../Images/CarouselHeaders/rariteitenkabinet01.jpg');"></div>
+                <div class="carousel-caption">
+                    <h1 class="blackoutline">Curator</h1>
+                </div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="@Url.Action("Index", "Hobbyist")">
+                <div class="fill" style="background-image: url('../../Images/CarouselHeaders/JANTJES_2015_TVG_0371.jpg');"></div>
+                <div class="carousel-caption">
+                    <h1 class="blackoutline">Hobbyist</h1>
+                </div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="@Url.Action("Index", "PaterFamilias")">
+                <div class="fill" style="background-image: url('../../Images/CarouselHeaders/familie-xxlarge.JPG');"></div>
+                <div class="carousel-caption">
+                    <h1 class="blackoutline">Pater Familias</h1>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="icon-prev"></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="icon-next"></span>
+    </a>
+</div>
+
+<div class="section">
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-3">
+                <a href="@Url.Action("Index", "Macroscopisch")">
+                    <ul class="hovertext effect">
+                        <li>
+                            <h2 class="zero">Macroscopisch Oog</h2>
+                            <p class="zero">Enkele voorbeelden uit de pathologie.</p>
+                        </li>
+                        <li>
+                        <img class="sideimage slideimage" src="~/Images/HomePage/A.jpg" />
+                        </li>
+                    </ul>
+                </a>
+                <p></p>
+                <a href="@Url.Action("Index", "Muzikant")">
+                    <ul class="hovertext effect">
+                        <li>
+                            <h2 class="zero">Muzikant</h2>
+                            <p class="zero">Enkele klankrijke exploten.</p>
+                        </li>
+                        <li>
+                            <img class="sideimage slideimage" src="~/Images/HomePage/C.jpg" />
+                        </li>
+                    </ul>
+                </a>
+                <p></p>
+                <a href="@Url.Action("Index", "Andreas")">
+                    <ul class="hovertext effect">
+                        <li>
+                            <h2 class="zero">ANDREAS</h2>
+                            <p class="zero">Een autobiografische roman over Andreas Vesalius geschreven door Johan in 2014.</p>
+                        </li>
+                        <li>
+                            <img class="sideimage slideimage" src="~/Images/HomePage/E.jpg" />
+                        </li>
+                    </ul>
+                </a>
+                <p></p>
+                <a href="@Url.Action("Index", "ZOLarium")">
+                    <ul class="hovertext effect">
+                        <li>
+                            <h2 class="zero">ZOLarium</h2>
+                            <p class="zero">Het driemaandelijks tijdschrift van het ZOL waar Johan talloze artikels voor schreef.</p>
+                        </li>
+                        <li>
+                            <img class="sideimage slideimage" src="~/Images/HomePage/G.jpg" />
+                        </li>
+                    </ul>
+                </a>
+            </div>
+
+            <div class="col-lg-4 col-md-5 col-sm-6 col-xs-10 text-center">
+                <div>
+                    <a href="@Url.Action("Index", "Biografie")">
+                        <img class="img-thumbnail" style="width: 75%;" src="~/Images/HomePage/01biografie.jpg" />
+                    </a>
+                    <p>@Html.ActionLink("Biografie", "Index", "Biografie")</p>
+                </div>
+                <div>
+                    <a href="@Url.Action("Index", "Stamboom")">
+                        <img class="img-thumbnail" style="width: 75%;" src="~/Images/HomePage/02stamboom.jpg" />
+                    </a>
+                    <p>@Html.ActionLink("Stamboom", "Index", "Stamboom")</p>
+                </div>
+                <div>
+                    <a href="@Url.Action("Index", "Huwelijk")">
+                        <img class="img-thumbnail" style="width: 75%;" src="~/Images/HomePage/03huwelijkanjohan.jpg" />
+                    </a>
+                    <p>@Html.ActionLink("Huwelijk An & Johan", "Index", "Huwelijk")</p>
+                </div>
+                <div>
+                    <a href="@Url.Action("Index", "PaterFamilias")">
+                        <img class="img-thumbnail" style="width: 75%;" src="~/Images/HomePage/04kinderen10.jpg" />
+                    </a>
+                    <p>@Html.ActionLink("10 kinderen", "Index", "PaterFamilias")</p>
+                </div>
+                <div>
+                    <a href="@Url.Action("Index", "Patholoog")">
+                        <img class="img-thumbnail" style="width: 75%;" src="~/Images/HomePage/patholoog.jpg" />
+                    </a>
+                    <p>@Html.ActionLink("Patholoog", "Index", "Patholoog")</p>
+                </div>
+                <div>
+                    <a href="@Url.Action("Index", "Curator")">
+                        <img class="img-thumbnail" style="width: 75%;" src="~/Images/HomePage/06curator.jpg" />
+                    </a>
+                    <p>@Html.ActionLink("Curator", "Index", "Curator")</p>
+                </div>
+                <div>
+                    <a href="@Url.Action("Index", "Vesalius")">
+                        <img class="img-thumbnail" style="width: 75%;" src="~/Images/HomePage/09vesalius.jpg" />
+                    </a>
+                    <p>@Html.ActionLink("Vesalius", "Index", "Vesalius")</p>
+                </div>
+                <div>
+                    <a href="@Url.Action("Index", "JDC")">
+                        <img class="img-thumbnail" style="width: 75%;" src="~/Images/HomePage/10jaguar driver.jpg" />
+                    </a>
+                    <p>@Html.ActionLink("Jaguar Drivers Club", "Index", "JDC")</p>
+                </div>
+                <div>
+                    <a href="@Url.Action("Index", "Carnaval")">
+                        <img class="img-thumbnail" style="width: 75%;" src="~/Images/HomePage/11prins carnaval.jpg" />
+                    </a>
+                    <p>@Html.ActionLink("Prins Carnaval Johan I", "Index", "Carnaval")</p>
+                </div>
+                <div>
+                    <a href="@Url.Action("Index", "Media")">
+                        <img class="img-thumbnail" style="width: 75%;" src="~/Images/HomePage/12TVKranten.jpg" />
+                    </a>
+                    <p>@Html.ActionLink("TV & Media", "Index", "Media")</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                <a href="@Url.Action("Wijndegustatie", "Home")">
+                    <ul class="hovertext effect">
+                        <li>
+                            <h2 class="zero">Wijndegustatie</h2>
+                            <p class="zero">Een cursus wijndegustatie vanuit het standpunt van een proefpersoon.</p>
+                        </li>
+                        <li>
+                            <img class="slideimage sideimage" src="~/Images/HomePage/B.jpg" />
+                        </li>
+                    </ul>
+                </a>
+                <p></p>
+                <a href="@Url.Action("Index", "Fotografie")">
+                    <ul class="hovertext effect">
+                        <li>
+                            <h2 class="zero">Fotografie, penseel &#38; airbrush</h2>
+                            <p class="zero">artistieke ontplooiing op het grafisch domein.</p>
+                        </li>
+                        <li>
+                            <img class="slideimage sideimage" src="~/Images/HomePage/D2.jpg" />
+                        </li>
+                    </ul>
+                </a>
+                <p></p>
+                <a href="@Url.Action("Index", "Fritz")">
+                    <ul class="hovertext effect">
+                        <li>
+                            <h2 class="zero">FRITZ de FOET</h2>
+                            <p class="zero">Het volgend boek van Johan.</p>
+                        </li>
+                        <li>
+                            <img class="slideimage sideimage" src="~/Images/HomePage/F.jpg" />
+                        </li>
+                    </ul>
+                </a>
+                <p></p>
+                <a href="@Url.Action("Index", "Artsenkrant")">
+                    <ul class="hovertext effect">
+                        <li>
+                            <h2 class="zero">Artsenkrant</h2>
+                            <p class="zero">Bekijk enkele artikels die Johan schreef voor deze wekelijkse krant.</p>
+                        </li>
+                        <li>
+                            <img class="slideimage sideimage" src="~/Images/HomePage/AK Vesaliusreis cover.jpg" />
+                        </li>
+                    </ul>
+                </a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+</div>
+<!-- /.section -->

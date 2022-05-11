@@ -1,0 +1,106 @@
+﻿@{
+    ViewBag.Title = "Muzikant";
+}
+
+<div id="myCarousel" class="carouselbig hidden-sm hidden-xs">
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <div class="fill" style="background-image: url('../Images/Muzikant/Johan orgelliefhebber.jpg'); "></div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">
+                Muzikant
+            </h1>
+            <ol class="breadcrumb">
+                <li>
+                    @Html.ActionLink("Home", "Index", "Home")
+                </li>
+                <li class="active">Muzikant</li>
+            </ol>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-8 col-xs-7">
+            <a href="@Url.Action("Groep1544", "Muzikant")">
+                <ul class="hovertext-small effect">
+                    <li>
+                        <h2 class="zero">Folkgroep 1544</h2>
+                    </li>
+                    <li>
+                        <img src="~/Images/Muzikant/1544 cover.jpg" alt="Groep 1544" class="img-responsive slideimage-small" />
+                    </li>
+                </ul>
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-8 col-xs-7">
+            <a href="@Url.Action("SixtySix", "Muzikant")">
+                <ul class="hovertext-small effect">
+                    <li>
+                        <h2 class="zero">Sixty Six</h2>
+                    </li>
+                    <li>
+                        <img src="~/Images/Muzikant/sixty six.jpg" alt="Groep Sixty Six" class="img-responsive slideimage-small" />
+                    </li>
+                </ul>
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-8 col-xs-7">
+            <a href="@Url.Action("BouwKlavecimbel", "Muzikant")">
+                <ul class="hovertext-small effect">
+                    <li>
+                        <h2 class="zero">Bouw klavecimbel</h2>
+                    </li>
+                    <li>
+                        <img src="~/Images/Muzikant/klavecimbel04.jpg" alt="Bouw klavecimbel" class="img-responsive slideimage-small" />
+                    </li>
+                </ul>
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-8 col-xs-7">
+            <a href="@Url.Action("ElFerio", "Muzikant")">
+                <ul class="hovertext-small effect">
+                    <li>
+                        <h2 class="zero">El Ferio</h2>
+                    </li>
+                    <li>
+                        <img src="~/Images/Muzikant/El Ferio.jpg" alt="El Ferio" class="img-responsive slideimage-small" />
+                    </li>
+                </ul>
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-8 col-xs-7">
+            <a>
+                <ul class="hovertext-small effect">
+                    <li>
+                        <h2 class="zero">Accordeon</h2>
+                        <p>Onder constructie</p>
+                    </li>
+                    <li>
+                        <img src="~/Images/Muzikant/Accordeon.jpg" alt="Accordeon" class="img-responsive slideimage-small" />
+                    </li>
+                </ul>
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-8 col-xs-7">
+            <a href="@Url.Action("RestauratieKlavecimbel", "Muzikant")">
+                <ul class="hovertext-small effect">
+                    <li>
+                        <h2 class="zero">Restauratie klavecimbel</h2>
+                    </li>
+                    <li>
+                        <img src="~/Images/Muzikant/Klavecimbel/Johan fecit.jpg" alt="Restauratie klavecimbel" class="img-responsive slideimage-small" />
+                    </li>
+                </ul>
+            </a>
+        </div>
+    </div>
+    <br />
+</div>

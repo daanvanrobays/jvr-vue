@@ -1,0 +1,78 @@
+﻿@{
+    ViewBag.Title = "Artsenkrant";
+}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">
+                Artsenkrant
+            </h1>
+            <ol class="breadcrumb">
+                <li>
+                    @Html.ActionLink("Home", "Index", "Home")
+                </li>
+                <li class="active">Artsenkrant</li>
+            </ol>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Artikels</h3>
+            <p>
+                Johan schreef 32 artikels over Andreas Vesalius en 32 over Ambroise Paré, de hofarts van 4 Franse koningen. Daarna 20 artikels getiteld ‘Levend Labo’ waarin laboproeven beschreven werden met levend menselijk of dierlijk materiaal. 
+            </p>
+            <p>
+                Eind 2015 voltooide Johan een 32-delig Panopticum over ‘de geschiedenis van de anatomische illustratie.’
+            </p>
+            <p>
+                In 2016 start in Artsenkrant een 32-delige reeks over ‘Women in Science’.
+            </p>
+            <p>
+                Begin 2017 start in Artsenkrant de nieuwe reeks: ‘ONTLEED’. In de eerste 32 artikels ontleedt Johan 32 kunstschilders die een medisch tafereel tot onderwerp namen. In de tweede reeks neemt hij 32 ‘medisch getinte’ schilderijen onder de loep die door minder gekende artiesten geschilderd werden. Ondermeer door de artsen zelf.
+            </p>
+        </div>
+    </div>
+    <hr />
+    <div class="row">
+        <div class="col-md-6">
+            <a href="@Url.Action("Vesalius", "Artsenkrant")"><h3>Vesalius</h3></a>
+            <a href="@Url.Action("Vesalius", "Artsenkrant")">
+                <img src="http://i.imgur.com/yDqBi9N.gif" data-original="/Images/Artsenkrant/AK Vesalius hoofd/0001.jpg" class="img-responsive lazy" width="800" height="1200" />
+            </a>
+        </div>
+        <div class="col-md-6">
+            <a href="@Url.Action("Paré", "Artsenkrant")"><h3>Paré</h3></a>
+            <a href="@Url.Action("Paré", "Artsenkrant")">
+                <img src="http://i.imgur.com/yDqBi9N.gif" data-original="/Images/Artsenkrant/AK Paré eenhoorn/0001.jpg" class="img-responsive lazy" width="800" height="1200" />
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <a href="@Url.Action("LevendLabo", "Artsenkrant")"><h3>Levend Labo</h3></a>
+            <a href="@Url.Action("LevendLabo", "Artsenkrant")">
+                <img src="http://i.imgur.com/yDqBi9N.gif" data-original="/Images/Artsenkrant/AK Levend Labo extremo/0001.jpg" class="img-responsive lazy" width="800" height="1200" />
+            </a>
+        </div>
+        <div class="col-md-6">
+            <a href="@Url.Action("Panopticum9", "Artsenkrant")"><h3>Panopticum 9</h3></a>
+            <a href="@Url.Action("Panopticum9", "Artsenkrant")">
+                <img src="http://i.imgur.com/yDqBi9N.gif" data-original="/Images/Artsenkrant/AK Panopticum/0001.jpg" class="img-responsive lazy" width="800" height="1200" />
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <a href="@Url.Action("Panopticum29", "Artsenkrant")"><h3>Panopticum 29</h3></a>
+            <a href="@Url.Action("Panopticum29", "Artsenkrant")">
+                <img src="http://i.imgur.com/yDqBi9N.gif" data-original="/Images/Artsenkrant/PanOpZOL 29/0001.jpg" class="img-responsive lazy" width="800" height="1200" />
+            </a>
+        </div>
+        <div class="col-md-6">
+            <a href="@Url.Action("Panopticum32", "Artsenkrant")"><h3>Panopticum 32</h3></a>
+            <a href="@Url.Action("Panopticum32", "Artsenkrant")">
+                <img src="http://i.imgur.com/yDqBi9N.gif" data-original="/Images/Artsenkrant/PanOpZOL 32/0001.jpg" class="img-responsive lazy" width="800" height="1200" />
+            </a>
+        </div>
+    </div>
+</div>
